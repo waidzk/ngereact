@@ -1,15 +1,16 @@
 import './App.css';
 
-function clock() {
-  const element = (
-    <div className='App'>
-      <h1>Helloworld!</h1>
-      <h2>It's {new Date().toLocaleTimeString()}.</h2>
-    </div>
-  );
+const element = <Hello name="Dinda" />;
+function Hello(props) {
+  return(
+    <h1>Hello, {props.name}</h1>
+  )
+}
+
+function runElement() {
   return(
     element
   )
 }
-setInterval(clock, 1000);
-export default clock;
+
+export default runElement;
