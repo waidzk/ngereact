@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
 
+.App {
+  background-color: #B3E140;
+  font-family: 'poppins';
+  padding: 30px;
+}
+
 .product-card {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #B3E140;
   padding: 20px;
-  font-family: 'poppins'
 }
 
 .product-description{
@@ -21,6 +26,11 @@
   color: #757575;
 }
 
+ul h3 {
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+
 .rating {
   color: #FFF500;
 }
@@ -31,9 +41,8 @@
 }
 
 .price h3 {
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .price h2 {
@@ -46,17 +55,35 @@
   height: 92vh;
 }
 
-.button-cart button {
+.button-cart a {
   background: transparent;
   border: 2px solid #fff;
+  text-decoration: none;
   width: 130px;
-  padding: 5px;
+  padding: 10px;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
 }
 
-.button-cart button:hover {
+.button-cart a:hover {
   background-color: #99C038;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.review img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.detailUserReview h4,
+.detailUserReview p{
+  margin: 0;
 }
